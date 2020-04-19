@@ -60,7 +60,6 @@ module OmniAuth
           hash[:id_info] = decoded
           hash[:email] = decoded["email"]
         end
-        hash[:raw_info] = raw_info unless skip_info?
         prune! hash
       end
 
